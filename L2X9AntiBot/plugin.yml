@@ -1,0 +1,10 @@
+name: L2X9AntiBot
+version: 1.0
+main: org.L2X9.AntiBot.Main
+authors: [254n_m]
+description: AntiBot plugin for anarchy servers
+commands:
+  abreload:
+    description: reload config
+  antibot:
+    description: reload config
