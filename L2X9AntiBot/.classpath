@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Mason/Desktop/Crafty/kSpigot.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Mason/Documents/rt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Mason/Desktop/Crafty/test_server/server.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

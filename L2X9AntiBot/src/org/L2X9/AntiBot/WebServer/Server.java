@@ -85,7 +85,9 @@ public class Server {
       	        while ((str = in.readLine()) != null)
       	          failedBuilder.append(str); 
       	          in.close();
-      	} catch (IOException iOException) {}
+      	} catch (IOException iOException) {
+      		
+      	}
       	}
           response = failedBuilder.toString();
         } 
