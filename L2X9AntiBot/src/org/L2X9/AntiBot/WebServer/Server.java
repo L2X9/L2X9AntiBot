@@ -96,7 +96,7 @@ public class Server {
           String uuid = Bukkit.getOfflinePlayer(name).getUniqueId().toString();
           FileManagement.verified.add(uuid);
           SaveArrayToFile.save();
-          System.out.println(ChatColor.translateAlternateColorCodes('&', "&a" + name + " Has been Whitelisted&r"));
+          System.out.println(ChatColor.translateAlternateColorCodes('&', "&a " + name + " Has been Whitelisted&r"));
         } 
       } catch (Exception e) {
         e.printStackTrace();

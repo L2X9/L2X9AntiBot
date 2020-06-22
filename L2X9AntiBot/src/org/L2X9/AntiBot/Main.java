@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+import org.L2X9.AntiBot.SQLite.CreateDB;
 import org.L2X9.AntiBot.WebServer.Server;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
@@ -17,6 +18,8 @@ public class Main extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info("L2X9AntiBot Enabled");
 		FileManagement.createFiles();
+		FileManagement.createDataBase();
+		CreateDB.createNewDatabase("verified.db");
 		try {
 			Server.Start();
 		} catch (IOException e) {

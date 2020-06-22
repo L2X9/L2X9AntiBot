@@ -10,9 +10,11 @@ public class FileManagement {
 	public static File failed;
 	public static File index;
 	public static File verifiedFile;
+	public static File dataBase;
+	public static File dir;
 	public static ArrayList<String> verified = new ArrayList<>();	  
 	public static void createFiles() {
-	File dir = new File("plugins/L2X9AntiBot"); { 
+	 dir = new File("plugins/L2X9AntiBot"); { 
 		if (!dir.exists()) {
 			 dir.mkdir();
 	File wsDir = new File("plugins/L2X9AntiBot/HTMLfiles"); {
@@ -246,4 +248,14 @@ public class FileManagement {
    }
   }				 
  }
+	public static void createDataBase() {
+		dataBase = new File(dir, "verified.db");
+		if (!dataBase.exists()) {
+			try {
+				dataBase.createNewFile();
+			} catch (IOException e) {
+			}
+		}
+		
+	}
 }
