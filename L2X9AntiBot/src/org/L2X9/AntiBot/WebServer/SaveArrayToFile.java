@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.L2X9.AntiBot.FileManagement;
 
 public class SaveArrayToFile {
+
 	@SuppressWarnings("resource")
 	public static void save() {
 	      try {
@@ -14,6 +15,7 @@ public class SaveArrayToFile {
 	          FileManagement.verified.forEach(s -> {
 	              try {
 	                  br.append(s);
+	                  br.write(", ");
 	                  br.newLine();
 	                  br.flush();
 	              } catch (IOException e) {
@@ -23,6 +25,7 @@ public class SaveArrayToFile {
 	      } catch (Exception e) {
 	          e.printStackTrace();
 	      }
-	  }
-	}
+	  }	
+}
+			
 

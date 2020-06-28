@@ -30,7 +30,7 @@ public class Server {
     System.out.println(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&4 WebServer&r&a Started&r"));
   }
   
-  static class MyHandler implements HttpHandler {
+static class MyHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
     	 StringBuilder indexBuilder = new StringBuilder(); {
    	      try {

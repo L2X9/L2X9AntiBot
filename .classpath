@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="L2X9AntiBot/src"/>
+	<classpathentry kind="lib" path="C:/Users/Mason/Desktop/Crafty/test_server/server.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
