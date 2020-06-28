@@ -69,7 +69,7 @@ public class Events implements Listener {
 			            	player.kickPlayer(ChatColor.translateAlternateColorCodes('&', Main.getPlugin().getConfig().getString("Kick-Message")));
 			            this.time--;
 			            if (!FileManagement.verified.contains(player.getUniqueId().toString())) {
-			            player.sendActionBar(ChatColor.translateAlternateColorCodes('&', "&6&lPlease verify at AntiBot.l2x9.org to play&r&b&l L2X9&r&c&l " + time + ""));
+			            player.sendActionBar(ChatColor.translateAlternateColorCodes('&', "&6&lPlease verify at AntiBot.l2x9.org to play&r&b&l L2X9&r&c&l " + String.valueOf(time) + ""));
 			            player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 100.0F, 1.0F);
 			             if (Main.getPlugin().getConfig().getString("Spam-the-player-to-whitelist").equalsIgnoreCase("true")) {
 			    			 List<String> strings = Main.getPlugin().getConfig().getStringList("Not-Verified-Message");
